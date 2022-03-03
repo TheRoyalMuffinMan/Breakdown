@@ -37,7 +37,7 @@
                     <a href="/terms.html" class="navbar__links">Terms</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Rate My Resume</a>
+                    <a href="/" class="button" type="button" id="resume__btn">Rate My Resume</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +49,10 @@
             <div class="main__content">
                 <h1>Resume Parser</h1>
                 <p>Built in python accompanied with a scoring system.</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
+                <input type="file" id="curr__file" hidden ="hidden"/>
+                <button class="main__btn" type="button" id="file__transfer" onclick="uploadFile(this.form)"> 
+                    <a href="/">Get Started</a>
+                </button>
             </div>
             <div class="main__img--container">
                 <img src="images/analysis.svg" alt="analysis" id="main__img">
