@@ -236,7 +236,37 @@
     margin-left: 500px;
 }
 
-.custom__file {
+label {
+    font-size: 4rem;
+    margin-top: 100px;
+    margin-left: 175px;
+    display: flex;
+    padding: 10px 235px;
+    height: 100px;
+    width: 69%;
+    border-radius: 0px;
+    background: #f77062;
+    color: #fff
+}
+label:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
+.upload {
+    font-size: 4rem;
+    margin-top: 30px;
+    margin-left: 175px;
+    display: flex;
+    padding: 10px 50px;
+    height: 100px;
+    width: 26%;
+    border-radius: 100px;
+    background: #4837ff;
+    color: white;
+}
+
+/* .custom__file {
     display: flex;
     align-items: left;
 }
@@ -252,12 +282,12 @@
     border-radius: 50px;
     background: #f77062;
     color: #fff
-}
+} */
 
-.custom__file__input:hover {
+/* .custom__file__input:hover {
     background: #4837ff;
     transition: all 0.3s ease;
-}
+} */
 
 
 /* Footer Section CSS */
