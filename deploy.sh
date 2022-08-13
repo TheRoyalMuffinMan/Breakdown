@@ -1,3 +1,7 @@
+cd client/
+npm run build
+cd ..
+
 git add .
-git commit -m "deploying"
+git commit --allow-empty -m "redeploying"
 git push heroku main
