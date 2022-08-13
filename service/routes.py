@@ -4,4 +4,4 @@ from service import app
 
 @app.route("/")
 def serve():
-    return "hello word"
+    return send_from_directory(app.static_folder,'index.html')
