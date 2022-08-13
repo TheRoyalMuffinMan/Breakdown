@@ -7,4 +7,4 @@ git add .
 git commit --allow-empty -m "redeploying"
 git push heroku main
 
-rmdir server/pages
+rm -r server/pages
