@@ -2,6 +2,8 @@ import {
     Flex,
     Heading
 } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHammer } from '@fortawesome/free-solid-svg-icons';
 
 const Logo = () => {
     return (
@@ -16,8 +18,10 @@ const Logo = () => {
                 WebkitTextFillColor: 'transparent'
             }}
             fontSize={["1rem", "1rem", "1rem", "1.5rem"]}
-        >
-            <i class="fa-solid fa-hammer"></i>
+        >   
+            <FontAwesomeIcon icon={faHammer} style={{
+                color: "#4837ff"
+            }}/>
             <Heading size={['md', 'md', 'md', 'lg']} fontWeight={400}>
                 Breakdown
             </Heading>
