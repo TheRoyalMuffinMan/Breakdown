@@ -19,9 +19,7 @@ const Logo = () => {
             }}
             fontSize={["1rem", "1rem", "1rem", "1.5rem"]}
         >   
-            <FontAwesomeIcon icon={faHammer} style={{
-                color: "#4837ff"
-            }}/>
+            <FontAwesomeIcon icon={faHammer} color="#805AD5" />
             <Heading size={['md', 'md', 'md', 'lg']} fontWeight={400}>
                 Breakdown
             </Heading>

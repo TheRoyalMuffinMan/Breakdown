@@ -1,36 +1,7 @@
-import { Flex, Stack, Image, Heading, Text } from "@chakra-ui/react"
+import { Flex, Stack, Image, Heading, Text, Button } from "@chakra-ui/react"
 import { Link } from "react-router-dom";
-import styled from '@emotion/styled';
 import analysis from "../../img/analysis.svg";
 import { normalGrey } from "../../globals/themes";
-
-const StyledButton = styled.button`
-    & {
-        background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-        font: inherit;
-        line-height: 1;
-        margin: 0.5em;
-        padding: 1rem;
-        outline: none;
-        border: none;
-        border-radius: 10px;
-        transition: 0.3s;
-    }
-
-    &:hover,
-    &:focus {
-        box-shadow: inset 8em 0 0 0 #4837ff;;
-    }
-
-    @media (max-width: 600px) {
-        & {
-            font-size: 0.7rem;
-            width: 7rem;
-            height: 2.5rem;
-        }
-
-    }
-`
 
 const HomePage = () => {
     return (
@@ -40,9 +11,7 @@ const HomePage = () => {
             align="center"
             justify="space-around"
             gap="3rem"
-            p={8}
-            pt={16}
-            pb={16}
+            p="2rem"
             bg={normalGrey}
             color="white"
         >
@@ -60,11 +29,11 @@ const HomePage = () => {
                     >
                         Resume Parser
                     </Heading>
-                    <StyledButton>
+                    <Button colorScheme="purple">
                         <Link to="/rate">
                             Get Started
                         </Link>
-                    </StyledButton>
+                    </Button>
                 </Flex>
                 <Text    
                     fontSize={["1rem", "1.5rem", "1.5rem", "1.5rem"]}

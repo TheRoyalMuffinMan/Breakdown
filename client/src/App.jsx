@@ -10,7 +10,7 @@ import { normalGrey } from './globals/themes';
 
 function App() {
 	return (
-		<chakra.div bg={normalGrey} minHeight={"100vh"}>
+		<chakra.div display="flex" flexDir="column" bg={normalGrey} minHeight={"100vh"}>
 			<Nav />
 				<Routes>
 					<Route path="/" element={<HomePage />} />
