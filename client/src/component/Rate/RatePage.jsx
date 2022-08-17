@@ -21,10 +21,10 @@ const RatePage = () => {
 
     return (
         <Flex 
+            as="main"
             flexDir="column" 
             align="center" 
             justify="center"
-            flex="1"
             gap="2rem"
             p="2rem"
         >

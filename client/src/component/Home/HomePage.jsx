@@ -1,18 +1,16 @@
 import { Flex, Stack, Image, Heading, Text, Button } from "@chakra-ui/react"
 import { Link } from "react-router-dom";
 import analysis from "../../img/analysis.svg";
-import { normalGrey } from "../../globals/themes";
 
 const HomePage = () => {
     return (
         <Flex
-            flexDir="column"
             as="main"
+            flexDir="column"
             align="center"
             justify="space-around"
             gap="3rem"
             p="2rem"
-            bg={normalGrey}
             color="white"
         >
             <Stack>

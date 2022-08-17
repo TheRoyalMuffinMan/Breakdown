@@ -1,22 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { customTheme } from './globals/themes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-		<ChakraProvider 
-			theme={extendTheme({
-				fonts: {
-					heading: 'Kumbh Sans',
-					subHeading: 'Kumbh Sans',
-					body: 'Kumbh Sans',
-				}
-			})}
-		>
+		<ChakraProvider theme={customTheme} >
 			<HashRouter basename={process.env.PUBLIC_URL}>
 				<App />
 			</HashRouter>
