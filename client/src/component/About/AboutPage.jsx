@@ -15,6 +15,7 @@ const AboutPage = () => {
         <Flex 
             as="main"
             justify="center"
+            flex="1"
             w="100%"
             mt="2rem"
             mb="2rem"

@@ -12,6 +12,7 @@ const HomePage = () => {
             gap="3rem"
             p="2rem"
             color="white"
+            flex="1"
         >
             <Stack>
                 <Flex align="center" justify="space-between">

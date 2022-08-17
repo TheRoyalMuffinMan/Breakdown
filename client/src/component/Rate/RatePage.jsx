@@ -25,6 +25,7 @@ const RatePage = () => {
             flexDir="column" 
             align="center" 
             justify="center"
+            flex="1"
             gap="2rem"
             p="2rem"
         >
