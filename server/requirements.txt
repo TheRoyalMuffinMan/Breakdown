@@ -1,7 +1,6 @@
 attrs==21.4.0
 Automat==20.2.0
 blis==0.7.8
-btrfsutil==5.18.1
 catalogue==2.0.8
 ceph==1.0.0
 ceph-volume==1.0.0
