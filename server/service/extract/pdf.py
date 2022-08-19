@@ -18,7 +18,7 @@ class PDFExtractor:
     def __extractingForPDF(self, path):
         with open(path, 'rb') as fh:
             # iterate over all pages of PDF document
-            for page in PDFPage.get_pages(fh, caching=True, check_extractable=True):
+            for page in PDFPage.get_pages(fh, caching=True, check_extractable=False):
                 # creating a resoure manager
                 resourceManager = PDFResourceManager()
                 
