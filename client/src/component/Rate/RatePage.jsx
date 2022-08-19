@@ -10,13 +10,22 @@ const fileTypes = ["PDF"];
 const RatePage = () => {
     const [file, setFile] = useState(null);
     const handleChange = (file) => {
-        let fd = new FormData();
-        fd.append('file', file);
         setFile(file);
     }
     
-    const upload = () => {
+    const upload = async () => {
+        const payload = new FormData();
+        payload.append('file', file);
+        const response = await fetch("/parse", {
+            method: "POST",
+            body: payload,
+        });
 
+        if (!response.ok) {
+            return new Error(response.statusText);
+        }
+        
+        return response.json()
     }
 
     return (
@@ -57,7 +66,9 @@ const RatePage = () => {
                 </Flex>
             </FileUploader>
             <Flex align="center"gap="0.5rem">
-                <Button onClick={upload} colorScheme="purple">Submit</Button>
+                <Button onClick={() => {
+                    upload().then(res => console.log(res));
+                }} colorScheme="purple">Submit</Button>
                 <Text color="#fff">
                     {file ? 
                     `File Selected: ${file.name}` :
